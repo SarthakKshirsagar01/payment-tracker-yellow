@@ -39,24 +39,29 @@ Each payment is authenticated and stored in Soroban contract storage.
 ---
 
 ##  Project Structure
+## 📁 Project Structure
+
+```text
 payment-tracker/
 │
 ├── src/
-│ └── lib.rs # Main smart contract
+│   └── lib.rs                  # Main smart contract
 │
 ├── target/
-│ └── wasm32v1-none/
-│ └── release/
-│ └── payment_tracker.wasm
+│   └── wasm32v1-none/
+│       └── release/
+│           └── payment_tracker.wasm
 │
 ├── screenshots/
-│ ├── wallet-options.png
-│ └── contract-explorer.png
+│   ├── wallet-options.png
+│   └── contract-explorer.png
 │
 ├── Cargo.toml
 ├── Cargo.lock
 ├── .gitignore
+├── LICENSE
 └── README.md
+```
 
 
 
@@ -68,13 +73,12 @@ cargo build --target wasm32-unknown-unknown --release
 
 
 
-Compiled WASM will be generated at:
+⭐Compiled WASM will be generated at:
 payment-tracker\target\wasm32v1-none\release\payment_tracker.wasm
 
 
 
-Deploy to Stellar Testnet
-
+⭐steps to deploy
 soroban contract deploy \
   --wasm target/wasm32v1-none/release/payment_tracker.wasm \
   --source alice \
@@ -83,23 +87,23 @@ soroban contract deploy \
 
 
 
-Deployed Contract Address 
+⭐Deployed Contract Address 
 Contract Address: CAJ7KQGX6W5YI273J6DXLITFUD23TZXS4WDRARX72AHJELGTHELXKKH2
 
 
 
-Wasm hash
+⭐Wasm hash
 50ecbf40e89bf0bce55f78e9e77d50440d45ea4020cb1a86a32b7b7b316c5719
 
 
 
-WASM Build
+⭐WASM Build
 
 The compiled contract is included:
 Users\HP\payment-tracker\target\wasm32v1-none\release\payment_tracker.wasm
 
 
-screenshots/
+⭐screenshots/
 -`contract-explorer.png`
 
 
