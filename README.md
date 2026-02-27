@@ -10,6 +10,7 @@ This project demonstrates multi-address payment recording, contract deployment, 
 The Payment Tracker contract allows multiple wallet addresses to record and store payment transactions securely on-chain.  
 Each payment is authenticated and stored in Soroban contract storage.
 
+
 ---
 
 ## ✨ Features
@@ -21,6 +22,8 @@ Each payment is authenticated and stored in Soroban contract storage.
 - 🔍 Verifiable via Stellar Explorer  
 - 📦 WASM build included  
 
+
+
 ---
 
 ## 🛠 Tech Stack
@@ -31,22 +34,44 @@ Each payment is authenticated and stored in Soroban contract storage.
 - **Freighter Wallet**
 - **Stellar Expert**
 
+
+
 ---
 
 ##  Project Structure
 payment-tracker/
-├── src/lib.rs
-├── target/wasm32v1-none/release/payment_tracker.wasm
+│
+├── src/
+│ └── lib.rs # Main smart contract
+│
+├── target/
+│ └── wasm32v1-none/
+│ └── release/
+│ └── payment_tracker.wasm
+│
 ├── screenshots/
+│ ├── wallet-options.png
+│ └── contract-explorer.png
+│
 ├── Cargo.toml
+├── Cargo.lock
+├── .gitignore
 └── README.md
+
+
+
 
 
 Build the Contract
 cargo build --target wasm32-unknown-unknown --release
 
+
+
+
 Compiled WASM will be generated at:
 payment-tracker\target\wasm32v1-none\release\payment_tracker.wasm
+
+
 
 Deploy to Stellar Testnet
 
@@ -56,16 +81,23 @@ soroban contract deploy \
   --network testnet
 
 
+
+
 Deployed Contract Address 
 Contract Address: CAJ7KQGX6W5YI273J6DXLITFUD23TZXS4WDRARX72AHJELGTHELXKKH2
 
+
+
 Wasm hash
 50ecbf40e89bf0bce55f78e9e77d50440d45ea4020cb1a86a32b7b7b316c5719
+
+
 
 WASM Build
 
 The compiled contract is included:
 Users\HP\payment-tracker\target\wasm32v1-none\release\payment_tracker.wasm
+
 
 screenshots/
 -`contract-explorer.png`
