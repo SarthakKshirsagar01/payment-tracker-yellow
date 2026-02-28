@@ -104,7 +104,7 @@ Users\HP\payment-tracker\target\wasm32v1-none\release\payment_tracker.wasm
 
 
 ⭐screenshots/
--`contract-explorer.png`
+![Wallet](C:\Users\HP\payment-tracker\screenshots\contract-explorer.png.png)
 
 
 
