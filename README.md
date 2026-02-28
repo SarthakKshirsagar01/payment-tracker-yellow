@@ -68,7 +68,7 @@ payment-tracker/
 
 
 Build the Contract
-cargo build --target wasm32-unknown-unknown --release
+cargo build --target wasm32v1-none --release
 
 
 
@@ -104,7 +104,7 @@ Users\HP\payment-tracker\target\wasm32v1-none\release\payment_tracker.wasm
 
 
 ⭐screenshots/
-![Wallet](C:\Users\HP\payment-tracker\screenshots\contract-explorer.png.png)
+![Explorer](screenshots/contract-explorer.png)
 
 
 
